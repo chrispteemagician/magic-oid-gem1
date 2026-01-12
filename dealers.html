@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become a Magic-Oid Founder Dealer - Join the Community</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero .subtitle {
+      font-size: 1.5rem;
+      color: #e9d5ff;
+      margin-bottom: 2rem;
+    }
+
+    .pricing-banner {
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+      color: #581c87;
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .pricing-banner h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .pricing-tier {
+      background: rgba(255,255,255,0.9);
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+    }
+
+    .pricing-tier.featured {
+      background: rgba(255,255,255,1);
+      transform: scale(1.05);
+    }
+
+    .tier-label {
+      font-size: 0.875rem;
+      opacity: 0.7;
+      margin-bottom: 0.25rem;
+    }
+
+    .tier-price {
+      font-size: 2rem;
+      font-weight: 900;
+      margin: 0.5rem 0;
+    }
+
+    .tier-note {
+      font-size: 0.75rem;
+    }
+
+    .urgency {
+      color: #fbbf24;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 1rem;
+    }
+
+    .heart-section {
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .heart-section h2 {
+      color: #581c87;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .heart-text {
+      color: #4b5563;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-size: 1.125rem;
+    }
+
+    .heart-text strong {
+      color: #581c87;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .benefit-card {
+      padding: 1.5rem;
+      border-radius: 1rem;
+      background: #f9fafb;
+    }
+
+    .benefit-card.purple { background: #f3e8ff; }
+    .benefit-card.green { background: #d1fae5; }
+    .benefit-card.blue { background: #dbeafe; }
+    .benefit-card.orange { background: #fed7aa; }
+
+    .benefit-card h3 {
+      color: #581c87;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .benefit-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .benefit-card li {
+      color: #374151;
+      padding: 0.5rem 0;
+      line-height: 1.6;
+    }
+
+    .benefit-card li::before {
+      content: "✓ ";
+      color: #10b981;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    .value-prop {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .value-prop p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .value-prop .highlight {
+      font-size: 2rem;
+      font-weight: 900;
+      display: block;
+      margin-top: 1rem;
+    }
+
+    .form-section {
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      margin-bottom: 2rem;
+    }
+
+    .form-section h2 {
+      color: #581c87;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      color: #374151;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 0.75rem 1rem;
+      border: 2px solid #d1d5db;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      transition: all 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .checkbox-group {
+      background: #f3e8ff;
+      border: 2px solid #c084fc;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .checkbox-label {
+      display: flex;
+      gap: 1rem;
+      cursor: pointer;
+      align-items: start;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin-top: 0.25rem;
+      cursor: pointer;
+    }
+
+    .checkbox-text {
+      flex: 1;
+    }
+
+    .checkbox-text strong {
+      color: #581c87;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .checkbox-text p {
+      color: #374151;
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      font-size: 1.125rem;
+      font-weight: 700;
+      padding: 1.25rem 2rem;
+      border: none;
+      border-radius: 0.75rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .error {
+      background: #fee2e2;
+      border: 2px solid #f87171;
+      color: #991b1b;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-note {
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.875rem;
+      margin-top: 1rem;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      color: #e9d5ff;
+      text-decoration: none;
+      font-size: 1.125rem;
+    }
+
+    .back-link a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero .subtitle {
+        font-size: 1.125rem;
+      }
+
+      .pricing-banner h2 {
+        font-size: 1.5rem;
+      }
+
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pricing-tier.featured {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Hero -->
+    <div class="hero">
+      <h1>🎩 Become a Magic-Oid Founder Dealer</h1>
+      <p class="subtitle">One membership. Every -Oid. The entire Kudos Family.</p>
+    </div>
+
+    <!-- Pricing Banner -->
+    <div class="pricing-banner">
+      <h2>⏰ FOUNDER TIERS - Limited Spots</h2>
+      <div class="pricing-grid">
+        <div class="pricing-tier featured">
+          <div class="tier-label">First 50</div>
+          <div class="tier-price">£97/year</div>
+          <div class="tier-note">Ends Jan 31</div>
+        </div>
+        <div class="pricing-tier">
+          <div class="tier-label">Next 50</div>
+          <div class="tier-price">£174/year</div>
+          <div class="tier-note">Through Feb</div>
+        </div>
+        <div class="pricing-tier">
+          <div class="tier-label">After That</div>
+          <div class="tier-price">£295/year</div>
+          <div class="tier-note">Regular price</div>
+        </div>
+      </div>
+      <p class="urgency">🚨 Current tier: £97/year FOREVER • Lock it in before Jan 31st</p>
+    </div>
+
+    <!-- Heart Section -->
+    <div class="heart-section">
+      <h2>A Message From Chris P Tee 💚</h2>
+      
+      <p class="heart-text">
+        <strong>Thank you.</strong> For 30 years, the magic community has been my home. You've accepted me, taught me, and let me share this incredible art with the world. Now that I'm unmasked as neurodivergent, I can finally be fully myself - and I want to give back everything I've learned.
+      </p>
+
+      <p class="heart-text">
+        This isn't just a dealer program. <strong>This is us building something together.</strong> A place where dealers, teachers, and students protect the art, share skills, and help each other grow. Where your kudos score matters more than your ad budget. Where those with resources help those without.
+      </p>
+
+      <p class="heart-text">
+        <strong>What we're building:</strong>
+      </p>
+      <ul style="color: #4b5563; line-height: 2; margin: 1rem 0 1rem 2rem;">
+        <li><strong>Skill Share Workshops</strong> - Dealers teaching techniques, students sharing discoveries</li>
+        <li><strong>Zoom Jam Sessions</strong> - Monthly gatherings to talk magic, swap ideas, build community</li>
+        <li><strong>Guest Lectures</strong> - Professional performers sharing their knowledge</li>
+        <li><strong>Safe Space</strong> - Protected by FeelFamous Kudos, no exploitation, just mutual support</li>
+        <li><strong>Cross-Pollination</strong> - Guitar dealers meet magic dealers, vintage radio enthusiasts meet coin collectors</li>
+      </ul>
+
+      <p class="heart-text">
+        Join us at <a href="https://comedymagic.co.uk" target="_blank" style="color: #667eea; font-weight: bold;">comedymagic.co.uk</a> where we're already building this community. The £97 you invest isn't just access to apps - it's <strong>helping fund the workshops, lectures, and jam sessions that make magic accessible to everyone.</strong>
+      </p>
+
+      <p class="heart-text" style="font-style: italic; color: #667eea;">
+        "World domination through kindness isn't just a tagline. It's how we actually change the world." - Chris P Tee
+      </p>
+    </div>
+
+    <!-- Benefits Grid -->
+    <div class="benefits-grid">
+      
+      <!-- All -Oids -->
+      <div class="benefit-card purple">
+        <h3>🎯 ALL -Oid Apps Pro</h3>
+        <ul>
+          <li><strong>Magic-Oid</strong> - Effect identification</li>
+          <li><strong>Guitar-Oid</strong> - Vintage guitar auth</li>
+          <li><strong>Radi-Oid</strong> - CB/ham radio ID</li>
+          <li><strong>Miniature-Oid</strong> - Dollhouse items</li>
+          <li><strong>Designer-Oid</strong> - Fashion auth</li>
+          <li><strong>Watch-Oid</strong> - Coming soon</li>
+          <li><strong>Coin-Oid</strong> - Coming soon</li>
+          <li><strong>Cannabin-Oid</strong> - 420 community</li>
+          <li style="color: #667eea; font-weight: bold;">Every future -Oid we launch!</li>
+        </ul>
+      </div>
+
+      <!-- Kudos Family Apps -->
+      <div class="benefit-card green">
+        <h3>💚 Kudos Family Apps Pro</h3>
+        <ul>
+          <li><strong>SpicyLister</strong> - AI listing generator</li>
+          <li><strong>SpicyLister Store</strong> - Sell inventory</li>
+          <li><strong>EntertainCMS</strong> - Booking management</li>
+          <li><strong>MeshCB</strong> - CB radio community</li>
+          <li><strong>Van-alyst</strong> - Vehicle inspection</li>
+          <li><strong>SpicyTasker</strong> - ADHD-friendly tasks</li>
+          <li><strong>DnB Santa</strong> - Video service</li>
+          <li><strong>One-click eBay</strong> - Coming soon</li>
+        </ul>
+      </div>
+
+      <!-- Dealer Superpowers -->
+      <div class="benefit-card blue">
+        <h3>🚀 Your Dealer Superpowers</h3>
+        <ul>
+          <li>Custom dealer page with referral link</li>
+          <li>QR code for events/conventions</li>
+          <li>Earn kudos when magicians find you</li>
+          <li>Higher kudos = featured placement</li>
+          <li>Track referrals & affiliate income</li>
+          <li>Multi-account discounts (coming)</li>
+          <li>Weekly "Trick of the Week" spotlight</li>
+          <li>Priority support forever</li>
+        </ul>
+      </div>
+
+      <!-- Community Features -->
+      <div class="benefit-card orange">
+        <h3>🌟 Community & Kudos</h3>
+        <ul>
+          <li>Earn kudos across ALL apps</li>
+          <li>Gift coins to community members</li>
+          <li>Bridge Walker status (multiple apps)</li>
+          <li>Rollover kudos to help others</li>
+          <li>"Pay it forward" culture</li>
+          <li>Trust-based reputation system</li>
+          <li>Join skill-share workshops</li>
+          <li>Access to monthly Zoom jams</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Value Prop -->
+    <div class="value-prop">
+      <p>Regular Price After Feb: £295/year or £49.95/month</p>
+      <span class="highlight">Founder Dealers Pay £97/year FOREVER 🔒</span>
+    </div>
+
+    <!-- Form -->
+    <div class="form-section">
+      <h2>Lock In £97/Year FOREVER</h2>
+
+      <div id="error" class="error" style="display: none;"></div>
+
+      <form id="dealerForm">
+        
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="dealerName">Dealer / Shop Name *</label>
+            <input type="text" id="dealerName" name="dealerName" required placeholder="Magic Shop Ltd">
+          </div>
+
+          <div class="form-group">
+            <label for="contactName">Your Name *</label>
+            <input type="text" id="contactName" name="contactName" required placeholder="John Smith">
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="john@magicshop.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+44 7700 900000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="website">Website URL *</label>
+          <input type="url" id="website" name="website" required placeholder="https://magicshop.com">
+        </div>
+
+        <div class="form-group">
+          <label for="description">Short Description *</label>
+          <textarea id="description" name="description" required placeholder="Tell magicians what makes your shop special..."></textarea>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="city">City *</label>
+            <input type="text" id="city" name="city" required placeholder="London">
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country *</label>
+            <input type="text" id="country" name="country" required placeholder="United Kingdom">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="socials">Social Links (optional)</label>
+          <textarea id="socials" name="socials" rows="2" placeholder="Instagram: @magicshop, Facebook: facebook.com/magicshop"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="payoutMethod">Preferred Payout Method *</label>
+          <select id="payoutMethod" name="payoutMethod" required>
+            <option value="bank">Bank Transfer</option>
+            <option value="paypal">PayPal</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- QR Display Agreement -->
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="agreeQRDisplay" name="agreeQRDisplay" required>
+            <div class="checkbox-text">
+              <strong>I agree to display my Magic-oid QR code *</strong>
+              <p>As a £97 Founder Dealer, I'll display my QR code at conventions, events, and in my shop where possible. This builds my kudos score, increases my visibility, and helps me earn affiliate income from scans and referrals.</p>
+            </div>
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          🎩 Become a Founder Dealer - £97/year FOREVER
+        </button>
+
+        <p class="footer-note">
+          Secure payment powered by Stripe • 30-day money-back guarantee
+        </p>
+
+      </form>
+    </div>
+
+    <!-- Back Link -->
+    <div class="back-link">
+      <a href="/">← Back to Magic-oid</a>
+    </div>
+
+  </div>
+
+  <script>
+    const form = document.getElementById('dealerForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const errorDiv = document.getElementById('error');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      errorDiv.style.display = 'none';
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Processing...';
+
+      const formData = {
+        dealerName: document.getElementById('dealerName').value,
+        contactName: document.getElementById('contactName').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        website: document.getElementById('website').value,
+        description: document.getElementById('description').value,
+        city: document.getElementById('city').value,
+        country: document.getElementById('country').value,
+        socials: document.getElementById('socials').value,
+        payoutMethod: document.getElementById('payoutMethod').value,
+        agreeQRDisplay: document.getElementById('agreeQRDisplay').checked
+      };
+
+      if (!formData.agreeQRDisplay) {
+        showError('Please agree to display your QR code at events');
+        return;
+      }
+
+      try {
+        const response = await fetch('/api/dealers-create-checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Failed to create checkout session');
+        }
+
+        // Redirect to Stripe
+        window.location.href = data.url;
+
+      } catch (err) {
+        showError(err.message);
+      }
+    });
+
+    function showError(message) {
+      errorDiv.textContent = message;
+      errorDiv.style.display = 'block';
+      submitBtn.disabled = false;
+      submitBtn.textContent = '🎩 Become a Founder Dealer - £97/year FOREVER';
+    }
+  </script>
+</body>
+</html>

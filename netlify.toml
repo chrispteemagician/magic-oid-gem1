@@ -1,18 +1,11 @@
 [build]
-  publish = "public"
+  publish = "."
   functions = "netlify/functions"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/dealers"
-  to = "/dealers/index.html"
-  status = 200
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[functions]
+  node_bundler = "esbuild"
